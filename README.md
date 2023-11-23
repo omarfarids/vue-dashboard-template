@@ -16,3 +16,58 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+# Vue Structure
+
+## Description
+
+This project serves as a foundation for building modern web applications using Vue.js. It includes a preconfigured setup with useful features such as hot reloading, bundling, and linting.
+
+## UI Component Libraries
+
+This project utilizes the following UI component libraries:
+
+- [DaisyUI](https://daisyui.com/): A lightweight and modular UI component library for Vue.js applications. It provides a set of customizable components that can be easily integrated into your project.
+
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework that allows you to rapidly build custom user interfaces. Tailwind CSS provides a comprehensive set of pre-designed utility classes that can be used to style your components.
+
+## State Management
+
+This project uses Piania as the state management library. Piania provides a simple and scalable way to manage the application state in Vue.js applications.
+
+## Form Handling
+
+For form handling, this project utilizes Vee-Validate. Vee-Validate is a flexible form validation library that helps you validate and handle form inputs in a Vue.js application.
+
+## Data Fetching
+
+This project uses Vue-Query for data fetching. Vue-Query is a powerful data-fetching library that simplifies the process of fetching, caching, and updating data in your Vue.js application.
+
+## Folder Structure
+
+The project follows a standard folder structure for organizing your code:
+
+├── src
+│ ├── constants -> any constants are global
+│ │ └── index.ts -> global constants
+│ │ └── types.ts -> global types
+│ │
+│ ├── components -> global components like buttons, inputs
+│ │ └── index.ts -> export all components
+│ │ └── types.ts -> types of global components
+│ │
+│ ├── helpers -> global functions like date formatting
+│ │
+│ ├── composables -> custom composables
+│ │
+│ ├── layouts
+│ │
+│ ├── modules -> like users, authentication
+│ │
+│ ├── router -> config of router
+│ │
+│ ├── store -> globbal state managment
+│ │
+│ ├── styles -> global styles
+│ │
+│ ├── setupAxios -> axios interceptor
