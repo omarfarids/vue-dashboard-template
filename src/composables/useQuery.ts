@@ -17,9 +17,9 @@ import {
 
 import { toast, ToastOptions } from "vue3-toastify";
 
-// import { useAppSelector } from ".";
-
 import { watch } from "vue";
+
+import useGlobalStore from "@/store/useGlobalStore";
 
 type UseQueryOptions = {
   queryKey: QueryKey;
@@ -32,9 +32,7 @@ export default function useQuery({
   queryFn,
   options,
 }: UseQueryOptions) {
-  // const { theme } = useAppSelector((state) => state.global);
-
-  const theme = "light";
+  const { theme } = useGlobalStore();
 
   const themeIsLight = theme === "light" ? "light" : "dark";
 

@@ -16,9 +16,9 @@ import {
   useMutation as useMutationReactQuery,
 } from "@tanstack/vue-query";
 
-// import { useAppSelector } from "./useRedux";
-
 import { AxiosError, AxiosResponse } from "axios";
+
+import useGlobalStore from "@/store/useGlobalStore";
 
 interface MutationConfig<Data, Error> {
   mutationFn: (variables: Data) => Promise<any>;
@@ -54,9 +54,7 @@ export default function useMutation<Data = any, Error = any>({
   isToast = true,
   toastMessage = "Good Job",
 }: MutationConfig<Data, Error>) {
-  // const { theme } = useAppSelector((state) => state.global);
-
-  const theme = "light";
+  const { theme } = useGlobalStore();
 
   const themeIsLight = theme === "light" ? "light" : "dark";
 
