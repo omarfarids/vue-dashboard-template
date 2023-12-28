@@ -1,11 +1,11 @@
 import { RouteRecordRaw } from "vue-router";
 
 export default [
-  {
-    path: "",
-    component: () => import("./pages/Login.vue"),
-    name: "LoginIndex",
-  },
+  // {
+  //   path: "",
+  //   component: () => import("./pages/Login.vue"),
+  //   name: "LoginIndex",
+  // },
   {
     path: "login",
     component: () => import("./pages/Login.vue"),

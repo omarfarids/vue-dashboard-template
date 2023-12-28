@@ -21,3 +21,9 @@ export type Type_Modal_types =
   | "other"
   | "filter"
   | undefined;
+
+export interface Type_Nav_Items {
+  name: string;
+  path: string;
+  icon: string;
+}

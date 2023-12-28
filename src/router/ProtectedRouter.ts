@@ -10,9 +10,9 @@ export default function ProtectedRouter(router: Router) {
 
     const inAuthPage = to.path.includes("/auth");
 
-    if (!isAuthenticated && !inAuthPage) {
-      return next({ name: "LoginIndex", replace: true });
-    }
+    // if (!isAuthenticated && !inAuthPage) {
+    //   return next({ name: "Login", replace: true });
+    // }
 
     if (isAuthenticated && inAuthPage) {
       return next({ name: "Home", replace: true });
