@@ -4,10 +4,15 @@ import { ToggleTheme } from "@/components";
 
 <template>
   <main>
-    <header>auth header</header>
-    <ToggleTheme />
+    <header
+      class="relative flex flex-row justify-center items-center p-6 md:p-12"
+    >
+      <img src="/public/assets/images/login-logo.png" alt="box bank" />
+      <ToggleTheme />
+    </header>
 
-    <RouterView />
-    <footer>auth footer</footer>
+    <div class="h-[60vh] flex justify-center items-center p-5">
+      <RouterView />
+    </div>
   </main>
 </template>

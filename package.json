@@ -13,6 +13,7 @@
     "axios": "^1.6.2",
     "js-cookie": "^3.0.5",
     "pinia": "^2.1.7",
+    "primeicons": "^6.0.1",
     "tailwind-merge": "^2.0.0",
     "vee-validate": "^4.11.8",
     "vue": "^3.3.8",

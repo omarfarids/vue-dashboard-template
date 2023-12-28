@@ -24,7 +24,13 @@ export default {
   },
   theme: {
     extend: {
-      // your spacing overrides
+      colors: {
+        // ------------ primary ------------
+        "primary-500": "#2855DD",
+
+        // ------------ Text ------------
+        "text-500": "#14151A",
+      },
       spacing: {
         xss: ".25rem",
         xs: "0.5rem",

@@ -24,9 +24,9 @@ defineProps({
 
 <template>
   <button
-    type="button"
+    type="submit"
     :class="[
-      'btn btn-primary min-w-[120px] relative capitalize text-base',
+      'btn btn-primary bg-primary-500 min-w-[120px] relative capitalize text-base',
       {
         'justify-start': icon,
       },
